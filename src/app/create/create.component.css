@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+header nav {
+    background: #222;
+    color: #fff;
+    opacity: 0.75;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav h1 {
+    margin: 0.5rem 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav h1 a {
+    color: #fff;
+}
+
+header nav ul {
+    margin-right: 3rem;
+    font-size: 1.2rem;
+}
+
+
+header nav ul li {
+    list-style: none;
+    margin: 1.75rem 1rem;
+}
+
+header nav ul li a {
+ color: #fff;
+ text-align: center;
+}
+
+header nav ul li a:hover {
+   color: #f2e305;
+   
+}
+
+
+.container {
+    max-width: 1075px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.container h1 {
+    text-align: center;
+    padding: 0.5rem;
+    background: #444;
+    color: #fff;
+}
+
+.container form {
+   max-width: 60%;
+   margin: auto;
+   background: wheat;
+   padding: 1rem;
+   font-weight: bold;
+   font-size: 1.2rem;
+
+}
+
+.container form .form-group {
+    display: flex;
+    flex-direction: row;
+    padding: 0.7rem;
+    justify-content: start;
+}
+
+.container .form-group label {
+    padding: 0.45rem;
+    margin: 0.5rem;
+}
+
+.container .form-group input,
+.container .form-group textarea {
+    padding: 0.55rem;
+    width: 100%;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+
+.container .form-group textarea {
+    min-height: 12rem;
+}
+
+.container .form-group input:focus,
+.container .form-group textarea:focus {
+    outline: none;
+}
+
+.container form .btn-container {
+    max-width: 100%;
+    margin: auto;
+}
+
+.container form button {
+    padding: 1rem;
+    width: 100%;
+    background: #444;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .container form {
+        min-width: 100%;
+    }
+    .container form .form-group {
+        display: flex;
+        flex-direction: column;
+        padding: 0.7rem;
+        justify-content: start;
+    }
+    
+    .container .form-group label {
+        padding: 0.15rem;
+        margin: 0.25rem;
+    }
+    
+    .container .form-group input,
+    .container .form-group textarea {
+        width: 100%;
+        border-radius: 1rem;
+        padding: 0.1rem;
+        font-size: 1.25rem;
+
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JTC Blogs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+        <h1> <a [routerLink] = "['/home']"> JTC POSTS </a> </h1>
+
+        <ul>
+            <li>
+                <a [routerLink] = "['/create']">Create</a>
+            </li>
+        </ul>
+
+    </nav>
+    </header>
+
+    <div class="container">
+        <app-alerts></app-alerts>
+
+    <div class="post-list">
+        <h1 id="heading">LIST OF POSTS</h1>
+        <div *ngFor = 'let post of postObjects'>
+        <div class="post" >
+                
+                <div class="label">POSTS</div>
+                <h1><a href="">{{post.title}}</a></h1>
+                <p>{{post.description}}</p>
+                <button (click)="updateVotes(post.postId)"> {{post.upVotes}} upvotes <i class="fa  fa-thumbs-o-up" aria-hidden="true"></i></button>
+                <!-- <i class="fa fa-thumbs-up" aria-hidden="true"></i> -->
+                <p>Date: {{post.createdOn | date}}</p>
+            
+        </div>
+
+        
+    </div>
+       </div>
+
+    </div>
+ 
+</body>
+</html>

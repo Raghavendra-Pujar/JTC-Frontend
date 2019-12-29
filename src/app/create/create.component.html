@@ -1,0 +1,45 @@
+
+
+<body>
+
+<header>
+  <nav>
+    <h1> <a [routerLink] = "['/home']"> JTC POSTS </a> </h1>
+
+  <ul>
+      <li>
+          <a [routerLink] = "['/create']">Create</a>
+      </li>
+  </ul>
+
+</nav>
+</header>
+<app-alerts></app-alerts>
+
+<section>
+  <div class="container">
+    
+    <form action="">
+      <h1>Create a Post</h1>
+      <div class="form-group">
+        <label for="">Heading</label>
+        <input name='title'[(ngModel)] = 'title' type="text">
+      </div>
+
+      <div class="form-group">
+        <label for="">Content</label>
+        <textarea name="description" [(ngModel)] = 'description' cols="30"></textarea>
+      </div>
+      
+      <div class="btn-container">
+        <button (click)="createPost()">Submit</button>
+      </div>
+      
+
+    </form>
+  </div>
+</section>
+</body>
+
+
+

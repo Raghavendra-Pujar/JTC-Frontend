@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+header nav {
+    background: #222;
+    color: #fff;
+    opacity: 0.75;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav h1 {
+    margin: 0.5rem 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav h1 a {
+    color: #fff;
+}
+
+header nav ul {
+    margin-right: 3rem;
+    font-size: 1.2rem;
+}
+
+
+header nav ul li {
+    list-style: none;
+    margin: 1.75rem 1rem;
+}
+
+header nav ul li a {
+ color: #fff;
+ text-align: center;
+}
+
+header nav ul li a:hover {
+   color: #f2e305;
+   
+}
+
+
+.container {
+    max-width: 1075px;
+    margin: auto;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.post-list {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-list #heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.post {
+    padding: 2rem;
+    border: solid 1px #c4c4c4;
+    margin: 0.2rem 0;
+}
+
+.post .label {
+    display: inline-block;
+    color: #000;
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0.6rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+    background: #f99500;
+    font-size: 1rem;
+}
+.post p {
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+}
+
+.post button {
+    font-size: 1.2rem;
+    padding: 0.65rem;
+}
+
